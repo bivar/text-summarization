@@ -1,0 +1,15 @@
+import os
+import telebot
+
+# API_TOKEN
+token = os.environ['BOT_API_TOKEN']
+
+# BOT 
+bot = telebot.TeleBot(token)
+
+# ENDPOINTS
+@bot.message_handler(commands=['start', 'help'])
+def send_welcome(message):
+    bot.reply_to(message, u"Olá! Envia um texto pra mim que eu darei meu melhor pra resumir pra você!")
+    
+bot.polling()
