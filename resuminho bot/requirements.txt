@@ -51,7 +51,7 @@ threadpoolctl==2.1.0
 tqdm==4.48.0
 ubuntu-drivers-common==0.0.0
 ufw==0.36
-urllib3==1.25.10
+urllib3==1.26.5
 virtualenv==20.0.28
 wasabi==0.7.1
 xkit==0.0.0
